@@ -1,6 +1,8 @@
 :root {
     --nav-color: #43281c;
     --text-color: #f8efc0;
+    --container-color: #eee1d5;
+    --input-color: #ab8a6a;
 }
 
 * {
@@ -29,4 +31,35 @@ nav {
     height: 4rem;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 4rem;
+    gap: 2rem;
+}
 
+.payment {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.items {
+    grid-row: 1/4;
+}
+
+
+.items, .name, .payment {
+    color: var(--input-color);
+    background-color: var(--container-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.item-content {
+    display: flex;
+    gap: 1rem;
+}
+
+.price {
+    align-items: flex-end;
+}
