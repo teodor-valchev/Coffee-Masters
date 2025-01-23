@@ -81,3 +81,21 @@ nav {
     margin: 1rem;
     border-radius: 0.5rem;
 }
+
+.name {
+    padding: 2rem;
+}
+
+.input-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    position: relative;
+    bottom: 2rem;
+}
+
+.input {
+    border-radius: 0.5rem;
+    border: 2px solid var(--input-color);
+    position: relative;
+    display: inline-block;
+}
