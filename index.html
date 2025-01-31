@@ -61,25 +61,45 @@
             </div>
         </section>
 
-        <section class="name">
-            <h3 class="input-title">Name</h3>
-            <div class="input">
-                <label class="input-label"> Name for Order
-                    <input type="text" class="input-field"/>
-                </label>
+        <section class="payment">
+            <div class="name-box box">
+                <h2 class="box-title">NAME</h2>
+                <div class="input-group">
+                    <label class="user-input-label" for="name">Name for order</label>
+                    <input type="text" class="user-input" id="name">
+                </div>
+            </div>
+            <div class="cc-box box">
+                <h2 class="box-title">PAYMENT</h2>
+                <div class="input-group">
+                    <label class="user-input-label" for="cc">Card number</label>
+                    <input type="text" class="user-input" id="cc">
+                </div>
+                <div class="input-group">
+                    <label class="user-input-label" for="ccv">CCV number</label>
+                    <input type="text" class="user-input short-input" id="ccv">
+                </div>
             </div>
         </section>
 
-        <section class="payment">
-            <h3>PAYMENT</h3>
-            <div>
-                <label> Card Number
-                    <input type="number" class="input-field"/>
-                </label>
-                <label> CCV Number
-                    <input type="number" class="input-field"/>
-                </label>
-            </div>
+        <section class="total">
+            <table class="totals-table">
+                <tbody>
+                <tr>
+                    <td>Subtotal:</td>
+                    <td>$19.27</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>$0.96</td>
+                </tr>
+                <tr class="final-totals">
+                    <td>Total:</td>
+                    <td>$20.23</td>
+                </tr>
+                </tbody>
+            </table>
+            <button class="checkout" type="button">Place order</button>
         </section>
     </div>
 </main>

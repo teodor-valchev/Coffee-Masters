@@ -86,16 +86,66 @@ nav {
     padding: 2rem;
 }
 
-.input-title {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+.input-group {
     position: relative;
-    bottom: 2rem;
+    margin-bottom: 20px;
 }
 
-.input {
-    border-radius: 0.5rem;
-    border: 2px solid var(--input-color);
-    position: relative;
-    display: inline-block;
+.user-input {
+    background-color: rgba(0,0,0,0);
+    border: 2px #885a2d solid;
+    padding: 8px;
+    border-radius: 100px;
+    width: 100%;
+    text-indent: 18px;
+    font-size: 18px;
+}
+
+.user-input-label {
+    color: #885a2d;
+    background-color: #eee1d5;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+}
+
+.short-input {
+    max-width: 200px;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/5;
+}
+
+.totals-table {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.totals-table td {
+    padding: 10px;
+}
+
+.totals-table td:last-child {
+    text-align: right;
+}
+
+.final-totals {
+    font-weight: bold;
+}
+
+.checkout {
+    background-color: #deb993;
+    border: none;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 100px;
+    font-size: 16px;
 }
